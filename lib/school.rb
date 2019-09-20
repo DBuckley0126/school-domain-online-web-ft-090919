@@ -19,13 +19,11 @@ attr_reader :name, :roster
   end
 
   def sort
+    output_hash = {}
     @roster.each do |key, value|
-      binding.pry
-
-      #puts hash.sort_by{|age, student_array| student_array}
+      #binding.pry
+      output_hash[key] = value.sort
     end
-
-
-    #@roster.sort_by{|age, students| students}
+    output_hash
   end
 end
