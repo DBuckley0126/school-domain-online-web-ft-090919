@@ -8,5 +8,8 @@ attr_reader :name, :roster
     @roster = Hash.new
   end
 
-
+  def add_student (student_name, student_age)
+    @roster[student_age] = [] unless @roster.keys.include?(student_age)
+    @roster[student_age] << student_name
+  end
 end
