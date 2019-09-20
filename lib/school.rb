@@ -18,6 +18,6 @@ attr_reader :name, :roster
   end
 
   def sort
-    @roster.sort_by{|students| students}
+    @roster.sort_by{|age, students| students}
   end
 end
