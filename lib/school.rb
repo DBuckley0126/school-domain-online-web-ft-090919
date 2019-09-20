@@ -16,4 +16,8 @@ attr_reader :name, :roster
   def grade (num)
     @roster[num]
   end
+
+  def sort
+    @roster.sort_by{|students| students}
+  end
 end
