@@ -19,7 +19,7 @@ attr_reader :name, :roster
 
   def sort
     @roster.each do |hash|
-      print hash.sort_by{|age, student_array| student_array}
+      hash.sort_by{|age, student_array| student_array}
     end
 
 
